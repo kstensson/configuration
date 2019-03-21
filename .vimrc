@@ -124,6 +124,3 @@ au BufNewFile,BufRead *.js, *.html, *.css
 " YCM settings
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-" Theme settings
-colorscheme zenburn
