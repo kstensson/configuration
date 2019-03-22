@@ -20,6 +20,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'SirVer/ultisnips'
+" TSServer is needed for JS
+Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'rdnetto/YCM-Generator'
 
 
 " All of your Plugins must be added before the following line
@@ -122,7 +126,7 @@ nnoremap <silent> <F5> :SyntasticCheck<CR>
 " EOF
 
 " Full stack settings
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile, BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
@@ -133,8 +137,6 @@ au BufNewFile,BufRead *.js, *.html, *.css
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-" HTML settings
-iabbrev </</<C-X><C-O>
 
 " Snippets settings
 
@@ -143,10 +145,16 @@ let g:UltiSnipsSnippetsDir = "~/.vim/bundle/vim-snippets/UltiSnips"
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsListSnippets="<c-a>"
+let g:UltiSnipsJumpForwardTrigger="<c-x>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 au FileType javascript :UltiSnipsAddFiletypes javascript
+au FileType html :UltiSnipsAddFiletypes html.html
+au FileType cc :UltiSnipsAddFiletypes cc
+
+" UltiSnips
+
 
