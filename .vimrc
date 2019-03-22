@@ -17,7 +17,9 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'kien/ctrlp.vim'
+Plugin 'honza/vim-snippets'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'SirVer/ultisnips'
 
 
 " All of your Plugins must be added before the following line
@@ -130,3 +132,21 @@ au BufNewFile,BufRead *.js, *.html, *.css
 " YCM settings
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" HTML settings
+iabbrev </</<C-X><C-O>
+
+" Snippets settings
+
+let g:UltiSnipsSnippetsDir = "~/.vim/bundle/vim-snippets/UltiSnips"
+
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+au FileType javascript :UltiSnipsAddFiletypes javascript
+
