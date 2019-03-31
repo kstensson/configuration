@@ -15,11 +15,12 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
-Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'SirVer/ultisnips'
+Plugin 'ajmwagar/vim-deus'
 " TSServer is needed for JS
 Plugin 'Valloric/YouCompleteMe'
 
@@ -155,6 +156,7 @@ au FileType javascript :UltiSnipsAddFiletypes javascript
 au FileType html :UltiSnipsAddFiletypes html.html
 au FileType cc :UltiSnipsAddFiletypes cc
 
-" UltiSnips
-
-
+" Theme settings
+syntax enable
+set background=dark
+colorscheme solarized
