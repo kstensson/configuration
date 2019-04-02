@@ -159,4 +159,5 @@ au FileType cc :UltiSnipsAddFiletypes cc
 " Theme settings
 syntax enable
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+
