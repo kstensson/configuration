@@ -17,13 +17,14 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
+Plugin 'alvan/vim-closetag'
 Plugin 'honza/vim-snippets'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'SirVer/ultisnips'
 Plugin 'ajmwagar/vim-deus'
 " TSServer is needed for JS
 Plugin 'Valloric/YouCompleteMe'
-
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'rdnetto/YCM-Generator'
 
 
@@ -152,12 +153,26 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger="<c-j>"
 au FileType javascript :UltiSnipsAddFiletypes javascript
 au FileType html :UltiSnipsAddFiletypes html.html
 au FileType cc :UltiSnipsAddFiletypes cc
+au Filetype hbs :UltiSnipsAddFiletypes html
 
 " Theme settings
 syntax enable
 set background=dark
 " colorscheme solarized
+
+" Mutasche/handlebars settings
+
+let g:mustache_abbreviations = 1
+
+
+
+" Closetag plugin settings
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.hbs'
+let g:closetag_emptyTags_caseSensitive = 0
+let g:closetag_shortcut = '>'
+
 
