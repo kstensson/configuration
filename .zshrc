@@ -93,3 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 . ~/z.sh
+
+
+# Aliases # 
+
+  # Random Background #
+alias RB="feh --randomize --bg-fill ~/.wallpaper/*"
