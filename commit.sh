@@ -6,8 +6,8 @@ cp ~/.emacs ./
 cp ~/.config/i3/config i3/config
 cp ~/.Xresources ./
 cp -r ~/.wallpaper ./.wallpaper
-cp -r ~/scripts ./scrip
-cp ~/.bashrc ./.bash
+cp -r ~/scripts ./scripts
+cp ~/.bashrc ./.bashrc
 
 read -p "Enter a commit message: " message
 
