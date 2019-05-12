@@ -32,7 +32,8 @@
 (require 'evil-leader)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
-  "e f" 'find-file)
+  "f" 'find-file
+  "t" 'ansi-term)
 
 (require 'evil)
 (evil-mode 1)
@@ -111,3 +112,7 @@
 ;; Magit
 (require 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; Remove annoying GUI stuff
+(menu-bar-mode -1)
+(tool-bar-mode -1)
