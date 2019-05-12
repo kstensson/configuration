@@ -9,7 +9,7 @@
  '(flycheck-python-pycompile-executable "python3")
  '(package-selected-packages
    (quote
-    (evil-magit magit evil-smartparens smartparens evil-nerd-commenter projectile web-mode ac-html ac-html-bootstrap evil-surround helm evil-leader nov jedi py-autopep8 flycheck auto-complete emms evil xclip)))
+    (linum-relative evil-magit magit evil-smartparens smartparens evil-nerd-commenter projectile web-mode ac-html ac-html-bootstrap evil-surround helm evil-leader nov jedi py-autopep8 flycheck auto-complete emms evil xclip)))
  '(python-shell-interpreter "python3"))
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -116,3 +116,7 @@
 ;; Remove annoying GUI stuff
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+
+;; Relative line numbers
+(require 'linum-relative)
+(linum-relative-global-mode 1)
