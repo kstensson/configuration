@@ -1,9 +1,0 @@
-#!/usr/bin/python3
-import sys
-
-def main(*args):
-    print(args)
-    for arg in args:
-        print(arg)
-
-main(sys.stdin.read())
