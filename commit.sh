@@ -3,7 +3,6 @@
 cp ~/.zshrc ./
 cp ~/.vimrc ./
 cp ~/.emacs ./
-cp ~/.config/i3/config i3/config
 cp ~/.Xresources ./
 cp -r ~/.wallpaper ./.wallpaper
 cp -r ~/scripts ./scripts
