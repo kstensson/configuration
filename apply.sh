@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git pull
+
 cp .emacs ~/.emacs
 cp .vimrc ~/.vimrc
 cp .Xresources ~/.Xresources
