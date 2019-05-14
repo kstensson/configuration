@@ -1,11 +1,11 @@
 #!/bin/bash
 
-cp -r ~/.emacs.d ./.emacs.d
+cp ~/.emacs.d/* ./.emacs.d
 cp ~/.zshrc ./
 cp ~/.vimrc ./
 cp ~/.emacs ./
 cp ~/.Xresources ./
-cp -r ~/scripts ./scripts
+cp ~/scripts/* ./scripts
 cp ~/.bashrc ./.bashrc
 
 read -p "Enter a commit message: " message
