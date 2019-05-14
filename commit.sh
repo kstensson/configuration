@@ -5,7 +5,6 @@ cp ~/.zshrc ./
 cp ~/.vimrc ./
 cp ~/.emacs ./
 cp ~/.Xresources ./
-cp -r ~/.wallpaper ./.wallpaper
 cp -r ~/scripts ./scripts
 cp ~/.bashrc ./.bashrc
 
