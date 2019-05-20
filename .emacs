@@ -13,7 +13,7 @@
  '(flycheck-python-pycompile-executable "python3")
  '(package-selected-packages
    (quote
-    (linum-relative evil-magit magit evil-smartparens smartparens evil-nerd-commenter projectile web-mode ac-html ac-html-bootstrap evil-surround helm evil-leader nov jedi py-autopep8 flycheck auto-complete emms evil xclip)))
+    (jedi which-key linum-relative evil-magit magit evil-smartparens smartparens evil-nerd-commenter projectile web-mode ac-html ac-html-bootstrap evil-surround helm evil-leader nov py-autopep8 flycheck auto-complete emms evil xclip)))
  '(python-shell-interpreter "python3"))
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -26,10 +26,16 @@
 
 (package-initialize)
 
+
+(require 'helm-config)
+(global-set-key (kbd "M-x") #'helm-M-x)
+(global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
+(global-set-key (kbd "C-x C-f") #'helm-find-files)
+(helm-mode 1)
 ;; Ivy settings
 
-(require 'ivy)
-(ivy-mode 1)
+; (require 'ivy)
+; (ivy-mode 1)
 
  ;; Evil settings
 (global-evil-leader-mode)
@@ -125,4 +131,9 @@
 (require 'linum-relative)
 (linum-relative-global-mode 1)
 
+;; Annoying
 (blink-cursor-mode 1)
+
+;; Which key stuff
+(require 'which-key)
+(which-key-mode)

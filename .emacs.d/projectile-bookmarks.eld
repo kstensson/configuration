@@ -1,1 +1,1 @@
-("~/configuration/")
+("~/.emacs.d/elpa/jedi-core-0.2.7/")

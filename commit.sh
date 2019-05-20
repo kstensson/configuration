@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cp ~/.emacs.d/* ./.emacs.d
 cp ~/.zshrc ./
 cp ~/.vimrc ./
 cp ~/.emacs ./
