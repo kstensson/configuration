@@ -4,7 +4,7 @@ cp ~/.zshrc ./
 cp ~/.vimrc ./
 cp ~/.emacs ./
 cp ~/.Xresources ./
-cp ~/scripts/* ./scripts
+cp ~/scripts/ ./scripts -r
 cp ~/.bashrc ./.bashrc
 
 read -p "Enter a commit message: " message
