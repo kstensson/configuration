@@ -6,6 +6,7 @@ cp ~/.emacs ./
 cp ~/.Xresources ./
 cp ~/scripts/ ./scripts -r
 cp ~/.bashrc ./.bashrc
+cp -r ~/.emacs.d ./.emacs.d
 
 read -p "Enter a commit message: " message
 
