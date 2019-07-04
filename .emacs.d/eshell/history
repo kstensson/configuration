@@ -2,3 +2,19 @@ ls
 ll
 ls -al
 ls
+ls
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+ls
+sudo chmod a+rx /usr/local/bin/youtube-dl
+ls
+youtube-dl 
+pip3 install snallygaster
+pip3 install snallygaster --user
+snallygaster 
+snallygaster -h
+snallygaster shta.se
+snallygaster shta.se -d
+lsblk
+lsblk
+lsblk
+lsblk
