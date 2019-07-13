@@ -1,1 +1,0 @@
-("~/c-demo-project/" "~/Documents/C/" "~/linux/" "~/.emacs.d/elpa/jedi-core-0.2.7/")
