@@ -3,6 +3,7 @@
 cp ~/.zshrc ./
 cp ~/.vimrc ./
 cp ~/.emacs ./
+cp ~/.config/nvim/init.vim ./
 cp ~/.Xresources ./
 cp ~/scripts/ ./scripts -r
 cp ~/.bashrc ./.bashrc
