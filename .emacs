@@ -45,7 +45,7 @@
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
   "f" 'find-file
-  "t" 'ansi-term)
+  "t" 'eshell)
 
 (require 'evil)
 (evil-mode 1)
