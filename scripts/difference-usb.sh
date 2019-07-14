@@ -1,5 +1,3 @@
-#!/bin/bash
-
 lsblk > tmpwow
 sleep 8
 lsblk > tmp2wow

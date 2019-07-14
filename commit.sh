@@ -5,6 +5,7 @@ cp ~/.vimrc ./
 cp ~/.emacs ./
 cp ~/.config/nvim/init.vim ./
 cp ~/.Xresources ./
+rm -r scripts
 cp ~/scripts/ ./scripts -r
 cp ~/.bashrc ./.bashrc
 
