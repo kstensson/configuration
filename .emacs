@@ -7,57 +7,16 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
- '(compilation-message-face (quote default))
- '(custom-enabled-themes (quote (tango-dark)))
+ '(custom-enabled-themes (quote (night-owl)))
  '(custom-safe-themes
    (quote
     ("73a13a70fd111a6cd47f3d4be2260b1e4b717dbf635a9caee6442c949fad41cd" "b181ea0cc32303da7f9227361bb051bbb6c3105bb4f386ca22a06db319b08882" "962dacd99e5a99801ca7257f25be7be0cebc333ad07be97efd6ff59755e6148f" "4aa183d57d30044180d5be743c9bd5bf1dde686859b1ba607b2eea26fe63f491" default)))
- '(fci-rule-color "#010F1D")
  '(flycheck-python-flake8-executable "python3")
  '(flycheck-python-pycompile-executable "python3")
- '(highlight-changes-colors (quote ("#EF5350" "#7E57C2")))
- '(highlight-tail-colors
-   (quote
-    (("#010F1D" . 0)
-     ("#B44322" . 20)
-     ("#34A18C" . 30)
-     ("#3172FC" . 50)
-     ("#B49C34" . 60)
-     ("#B44322" . 70)
-     ("#8C46BC" . 85)
-     ("#010F1D" . 100))))
- '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
     (function-args helm-gtags ggtags night-owl-theme company-irony irony jedi which-key linum-relative evil-magit magit evil-smartparens smartparens evil-nerd-commenter projectile web-mode ac-html ac-html-bootstrap evil-surround helm evil-leader nov py-autopep8 flycheck auto-complete emms evil xclip)))
- '(pos-tip-background-color "#FFF9DC")
- '(pos-tip-foreground-color "#011627")
- '(python-shell-interpreter "python3")
- '(vc-annotate-background nil)
- '(vc-annotate-color-map
-   (quote
-    ((20 . "#C792EA")
-     (40 . "#CF4F1F")
-     (60 . "#C26C0F")
-     (80 . "#FFEB95")
-     (100 . "#AB8C00")
-     (120 . "#A18F00")
-     (140 . "#989200")
-     (160 . "#8E9500")
-     (180 . "#F78C6C")
-     (200 . "#729A1E")
-     (220 . "#609C3C")
-     (240 . "#4E9D5B")
-     (260 . "#3C9F79")
-     (280 . "#7FDBCA")
-     (300 . "#299BA6")
-     (320 . "#2896B5")
-     (340 . "#2790C3")
-     (360 . "#82AAFF"))))
- '(vc-annotate-very-old-color nil)
- '(weechat-color-list
-   (quote
-    (unspecified "#011627" "#010F1D" "#DC2E29" "#EF5350" "#D76443" "#F78C6C" "#D8C15E" "#FFEB95" "#5B8FFF" "#82AAFF" "#AB69D7" "#C792EA" "#AFEFE2" "#7FDBCA" "#D6DEEB" "#FFFFFF"))))
+ '(python-shell-interpreter "python3"))
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
@@ -187,7 +146,7 @@
   (lambda () (electric-pair-mode 1)))
 
 (my-global-pair-mode 1)
-
+(load-theme 'night-owl)
 
 (setq
  helm-gtags-ignore-case t
