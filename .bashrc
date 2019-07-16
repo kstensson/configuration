@@ -116,4 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias vim=nvim
 alias l="ls -aC | lolcat"
+
