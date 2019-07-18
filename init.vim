@@ -2,7 +2,6 @@ set nocompatible
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set number
-set relativenumber
 set expandtab
 set smartindent
 

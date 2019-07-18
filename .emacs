@@ -16,7 +16,8 @@
  '(package-selected-packages
    (quote
     (function-args helm-gtags ggtags night-owl-theme company-irony irony jedi which-key linum-relative evil-magit magit evil-smartparens smartparens evil-nerd-commenter projectile web-mode ac-html ac-html-bootstrap evil-surround helm evil-leader nov py-autopep8 flycheck auto-complete emms evil xclip)))
- '(python-shell-interpreter "python3"))
+ '(python-shell-interpreter "python3")
+ '(safe-local-variable-values (quote ((flycheck-gcc-language-standard . c++11)))))
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
