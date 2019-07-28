@@ -1,3 +1,4 @@
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -15,7 +16,7 @@
  '(flycheck-python-pycompile-executable "python3")
  '(package-selected-packages
    (quote
-    (company-ycmd function-args helm-gtags ggtags company-irony irony jedi which-key linum-relative evil-magit magit evil-smartparens smartparens evil-nerd-commenter projectile web-mode ac-html ac-html-bootstrap evil-surround helm evil-leader nov py-autopep8 flycheck auto-complete emms evil xclip)))
+    (helm-make company-ycmd function-args helm-gtags ggtags company-irony irony jedi which-key evil-magit magit evil-smartparens smartparens evil-nerd-commenter projectile web-mode ac-html ac-html-bootstrap evil-surround helm evil-leader nov py-autopep8 flycheck auto-complete emms evil xclip)))
  '(python-shell-interpreter "python3")
  '(safe-local-variable-values
    (quote
@@ -48,8 +49,9 @@
 (require 'evil-leader)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
-  "f" 'find-file
-  "t" 'eshell)
+  "f" 'helm-find-files
+  "t" 'eshell
+  "m" 'helm-make)
 
 (require 'evil)
 (evil-mode 1)
@@ -137,10 +139,6 @@
 ;; Remove annoying GUI stuff
 ;(menu-bar-mode -1)
 (tool-bar-mode -1)
-
-;; Relative line numbers
-(require 'linum-relative)
-(linum-relative-global-mode 1)
 
 ;; Annoying
 (blink-cursor-mode 1)
