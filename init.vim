@@ -18,10 +18,6 @@ set encoding=utf-8
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/deoplete-clangx'
-Plug 'w0rp/ale'
-
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 

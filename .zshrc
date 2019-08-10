@@ -1,4 +1,3 @@
-export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -9,7 +8,7 @@ export ZSH="/home/kevin/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,7 +71,6 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-bindkey -v
 
 # User configuration
 
@@ -99,7 +97,3 @@ bindkey -v
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias vim=nvim
-KEYTIMEOUT=1
-

@@ -2,11 +2,14 @@
 
 git pull
 
-cp .emacs ~/.emacs;
-cp .vimrc ~/.vimrc;
-cp .Xresources ~/.Xresources;
-cp .zshrc ~/.zshrc;
-cp -r scripts/ ~/;
-cp .bashrc ~/.bashrc;
+mkdir -p ~/.config/nvim
+mkdir ~/scripts
+
+cp init.el ~/.emacs.d/init.el
+cp .vimrc ~/.vimrc
+cp .Xresources ~/.Xresources
+cp .zshrc ~/.zshrc
+cp -r scripts/ ~/
+cp .bashrc ~/.bashrc
 cp init.vim ~/.config/nvim/init.vim
 
