@@ -5,7 +5,8 @@ git pull
 mkdir -p ~/.config/nvim
 mkdir ~/scripts
 
-cp init.el ~/.emacs.d/init.el
+rm -rf ~/.emacs.d
+cp -r ./.emacs.d ~/.emacs.d
 cp .vimrc ~/.vimrc
 cp .Xresources ~/.Xresources
 cp .zshrc ~/.zshrc

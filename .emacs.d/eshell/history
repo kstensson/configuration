@@ -1,0 +1,20 @@
+ls
+ls -al
+./lint.sh 
+sh ./lint.sh 
+ls
+ls
+ls -al
+ls -al
+ls
++ 2 2
+(+ 2 2)
+(setq wow wow)
+(setq wow 'wow)
+wow
+(wow)
+ls
+ls
+ls
+ls -al
+ll

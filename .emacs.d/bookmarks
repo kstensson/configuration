@@ -1,0 +1,19 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("elisp doc"
+ (front-context-string . "\nAn Aside about ")
+ (rear-context-string . " Writing Defuns\n")
+ (position . 107065)
+ (filename . "/usr/share/info/emacs/eintr")
+ (info-node . "Primitive Functions")
+ (handler . Info-bookmark-jump))
+("org-doc"
+ (front-context-string)
+ (rear-context-string . "ur agendas::).\n\n")
+ (position . 45239)
+ (filename . "/usr/share/info/emacs/org")
+ (info-node . "Initial visibility")
+ (handler . Info-bookmark-jump))
+)

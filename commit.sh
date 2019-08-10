@@ -2,7 +2,8 @@
 
 cp ~/.zshrc ./
 cp ~/.vimrc ./
-cp ~/.emacs.d/init.el ./init.el
+rm -r ./emacs.d
+cp -r ~/.emacs.d ./
 cp ~/.config/nvim/init.vim ./
 cp ~/.Xresources ./
 rm -r scripts
