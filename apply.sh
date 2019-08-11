@@ -1,6 +1,9 @@
 #!/bin/bash
 
+cd ~/configuration
+
 git pull
+
 
 mkdir -p ~/.config/nvim
 mkdir ~/scripts

@@ -26,5 +26,7 @@ filetype plugin on
 set foldmethod=indent
 set foldlevel=99
 
+set timeoutlen=1000 ttimeoutlen=0
+
 nnoremap <space> za
 

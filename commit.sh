@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/configuration
+
 cp ~/.zshrc ./
 cp ~/.vimrc ./
 rm -r ./emacs.d
