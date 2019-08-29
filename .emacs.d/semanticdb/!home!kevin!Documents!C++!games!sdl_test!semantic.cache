@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [1 22])
+            ("iostream" include (:system-flag t) nil [23 42])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [53 62])
+                    ("args" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63 76]))                  
+                :type "int")
+                nil [44 600]))          
+      :file "main.cpp"
+      :pointmax 601
+      :fsize 600
+      :lastmodtime '(23910 53126 114856 354000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("build" function (:arguments ("main.cpp")) nil [1 46]))          
+      :file "Makefile"
+      :pointmax 46
+      :fsize 45
+      :lastmodtime '(23910 44782 728180 538000)
+      :unmatched-syntax '((shell-command 18 . 45) (bol 17 . 17))))
+  :file "!home!kevin!Documents!C++!games!sdl_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

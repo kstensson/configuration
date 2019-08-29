@@ -1,0 +1,190 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("SFML/Window.hpp" include (:system-flag t) nil [22 48])
+            ("SFML/Graphics.hpp" include (:system-flag t) nil [49 77])
+            ("game/game.hpp" include nil nil [92 116])
+            ("game/initialize.hpp" include nil nil [143 173])
+            ("game/gameloop.hpp" include nil nil [200 228])
+            ("game/draw.hpp" include nil nil [255 279])
+            ("game/eventloop.hpp" include nil nil [312 341])
+            ("main" function (:type "int") nil [350 420]))          
+      :file "main.cpp"
+      :pointmax 421
+      :fsize 420
+      :lastmodtime '(23906 14997 447559 231000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("build" function (:arguments ("main.o")) nil [1 79])
+            ("main.o" function (:arguments ("main.cpp" "game/initialize.hpp" "game/game.hpp" "game/gameloop.hpp" "game/draw.hpp" "game/eventloop.hpp")) nil [80 199]))          
+      :file "Makefile"
+      :pointmax 199
+      :fsize 198
+      :lastmodtime '(23906 14967 255815 347000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("SFML/Window.hpp" include (:system-flag t) nil [22 48])
+            ("SFML/Graphics.hpp" include (:system-flag t) nil [49 77])
+            ("GAME" variable (:constant-flag t) nil [87 91])
+            ("Game" type
+               (:members 
+                  ( ("Game" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [131 139])
+                            ("right" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [148 219])
+                            ("left" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [148 219])
+                            ("up" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [148 219])
+                            ("down" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [148 219])
+                            ("window" variable
+                               (:pointer 1
+                                :type ("sf::RenderWindow" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [229 254])
+                            ("circle" variable
+                               (:pointer 1
+                                :type ("sf::CircleShape" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [265 289])
+                            ("circle2" variable
+                               (:pointer 1
+                                :type ("sf::CircleShape" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [298 323])
+                            ("font" variable (:type ("sf::Font" type (:type "class") nil nil)) (reparse-symbol classsubparts) [333 347])
+                            ("text" variable (:type ("sf::Text" type (:type "class") nil nil)) (reparse-symbol classsubparts) [356 370])
+                            ("texture" variable (:type ("sf::Texture" type (:type "class") nil nil)) (reparse-symbol classsubparts) [380 400])
+                            ("sprite" variable (:type ("sf::Sprite" type (:type "class") nil nil)) (reparse-symbol classsubparts) [409 427])
+                            ("boundingdBox" variable (:type ("sf::FloatRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [436 463])
+                            ("boundingdBox2" variable (:type ("sf::FloatRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [472 500])
+                            ("public" label nil (reparse-symbol classsubparts) [507 514])
+                            ("Game" function
+                               (:constructor-flag t
+                                :type ("Game" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [523 566])
+                            ("initalize" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [575 591])
+                            ("draw" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [600 611])
+                            ("eventloop" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [620 636])
+                            ("gameloop" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [645 660]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [114 667]))                  
+                :type "namespace")
+                nil [93 669]))          
+      :file "game.hpp"
+      :pointmax 670
+      :unmatched-syntax '((semantic-list 587 . 607) (punctuation 564 . 565) (punctuation 563 . 564) (symbol 557 . 563) (semantic-list 534 . 545) (punctuation 515 . 516) (symbol 509 . 515) (semantic-list 587 . 607) (punctuation 564 . 565) (punctuation 563 . 564) (symbol 557 . 563) (semantic-list 534 . 545) (punctuation 515 . 516) (symbol 509 . 515))
+      :lexical-table 
+        '(("GAME")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("SFML/Window.hpp" include (:system-flag t) nil [22 48])
+            ("SFML/Graphics.hpp" include (:system-flag t) nil [49 77])
+            ("game.hpp" include nil nil [92 111])
+            ("GAME_INIT" variable (:constant-flag t) nil [128 137])
+            ("initalize" function
+               (:parent "Game::Game"
+                :type "int")
+                nil [139 1061]))          
+      :file "initialize.hpp"
+      :pointmax 1062
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GAME_INIT")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("SFML/Window.hpp" include (:system-flag t) nil [22 48])
+            ("SFML/Graphics.hpp" include (:system-flag t) nil [49 77])
+            ("game.hpp" include nil nil [92 111])
+            ("GAME_LOOP" variable (:constant-flag t) nil [128 137])
+            ("gameloop" function
+               (:parent "Game::Game"
+                :type "int")
+                nil [139 529]))          
+      :file "gameloop.hpp"
+      :pointmax 530
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GAME_LOOP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("SFML/Window.hpp" include (:system-flag t) nil [22 48])
+            ("SFML/Graphics.hpp" include (:system-flag t) nil [49 77])
+            ("game.hpp" include nil nil [92 111])
+            ("GAME_DRAW" variable (:constant-flag t) nil [128 137])
+            ("draw" function
+               (:parent "Game::Game"
+                :type "int")
+                nil [139 747]))          
+      :file "draw.hpp"
+      :pointmax 748
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GAME_DRAW")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("SFML/Window.hpp" include (:system-flag t) nil [22 48])
+            ("SFML/Graphics.hpp" include (:system-flag t) nil [49 77])
+            ("game.hpp" include nil nil [92 111])
+            ("GAME_EVENT_LOOP" variable (:constant-flag t) nil [128 143])
+            ("eventloop" function
+               (:parent "Game::Game"
+                :type "int")
+                nil [145 1566]))          
+      :file "eventloop.hpp"
+      :pointmax 1567
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GAME_EVENT_LOOP")
+          )
+))
+  :file "!home!kevin!Documents!C++!sfml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
